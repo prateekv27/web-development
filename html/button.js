@@ -1,20 +1,29 @@
-window.addEventListener("load", () => {
-    document.querySelector("#submit").addEventListener("click", age);
-});
+// window.addEventListener("load", () => {
+//     document.querySelector("#submit").addEventListener("click", age);
+// });
 
-function age() {
+// function age() {
 
-    let b1 = document.querySelector("#age");
-    let userage = b1.value;
+//     let b1 = document.querySelector("#age");
+//     let userage = b1.value;
 
-    if (userage < 18) {
-        alert("Invalid age");
-    }
-    else {
-        console.log(`${userage} is valid for driving license`);
+//     if (userage < 18) {
+//         alert("Invalid age");
+//     }
+//     else {
+//         console.log(`${userage} is valid for driving license`);
 
-        document.querySelector("#output").innerText = `${userage} is valid for driving license` ;
+//         document.querySelector("#output").innerText = `${userage} is valid for driving license` ;
 
-        b1.value = "";
-    }
+//         b1.value = "";
+//     }
+// }
+
+
+window.addEventListener("load" , () => {
+    document.querySelector("#submit").addEventListener("click" , js);
+})
+
+function js(){
+    document.querySelector('#heading').innerText = 'js is running'
 }
