@@ -15,7 +15,7 @@
 // let fruit2 = `bana\nna`
 // let fruit3 = `bana\rna`
 // console.log(fruit);
-// console.log(fruit2);
+// console.log(fruit2);k
 
 // console.log(fruit3);
 
@@ -33,3 +33,4 @@ let str2 = "give me 1000"
 let amt = parseInt(str2.slice(8));
 console.log(amt);
 console.log(typeof amt);
+
