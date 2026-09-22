@@ -1,10 +1,12 @@
-form{
+/* form{
     border : 2px solid black;
     background-color: aqua;
     padding : 10px;
     margin: 30px;
     width : 400px;
     border-radius: 1rem;
+    position: absolute;
+   
 }
 
 #password{
@@ -20,5 +22,34 @@ form{
 
 label{
     font-weight: bold;
+    background-color: aliceblue;
+    display: block;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    background-color: lightblue;
+    position: static;
+}
+
+.box span {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    background-color: red;
+} */
+
+
+.container{
+    display: flex;
+}
+
+
+.container div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    flex-direction: row;
 }
 

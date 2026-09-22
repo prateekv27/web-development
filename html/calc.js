@@ -1,34 +1,55 @@
-function calculate(operation){
-    let a = parseInt(document.querySelector('#box-1').value);
-    let b = parseInt(document.querySelector('#box-2').value);
-    let result;
-    if(operation == "add"){
-        result = a+b;
+// function calculate(operation){
+//     let a = parseInt(document.querySelector('#box-1').value);
+//     let b = parseInt(document.querySelector('#box-2').value);
+//     let result;
+//     if(operation == "add"){
+//         result = a+b;
         
-    }
-    else if(operation == "sub"){
-        result = a-b;
-    }
-    else if(operation == "div"){
-        result = a/b;
-    }
-    else{
-        result = a*b;
-    }
-    document.querySelector('#result').innerText = result;
+//     }
+//     else if(operation == "sub"){
+//         result = a-b;
+//     }
+//     else if(operation == "div"){
+//         result = a/b;
+//     }
+//     else{
+//         result = a*b;
+//     }
+//     document.querySelector('#result').innerText = result;
+// }
+// document.querySelector("#add").addEventListener("click", () => {
+//     calculate("add");
+// });
+
+// document.querySelector("#sub").addEventListener("click", () => {
+//     calculate("sub");
+// });
+
+// document.querySelector("#div").addEventListener("click", () => {
+//     calculate("div");
+// });
+
+// document.querySelector("#mul").addEventListener("click", () => {
+//     calculate("mul");
+// });
+
+
+            //better approach
+
+let a = document.querySelector('#box-1');
+let b = document.querySelector('#box-2');
+let result;
+let buttons = document.querySelectorAll('button');
+
+for(i of buttons){
+    i.addEventListener('click' , calc)
 }
-document.querySelector("#add").addEventListener("click", () => {
-    calculate("add");
-});
 
-document.querySelector("#sub").addEventListener("click", () => {
-    calculate("sub");
-});
+function calc(){
+    let i = this;
+    let operator = i.innerText;
+    let expression = a.value + operator + b.value;
+    result = eval(expression);
+    document.querySelector('#result').innerText = result;
 
-document.querySelector("#div").addEventListener("click", () => {
-    calculate("div");
-});
-
-document.querySelector("#mul").addEventListener("click", () => {
-    calculate("mul");
-});
+}
