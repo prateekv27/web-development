@@ -20,10 +20,21 @@
 // }
 
 
-window.addEventListener("load" , () => {
-    document.querySelector("#submit").addEventListener("click" , js);
-})
+// window.addEventListener("load" , () => {
+//     document.querySelector("#submit").addEventListener("click" , js);
+// })
 
-function js(){
-    document.querySelector('#heading').innerText = 'js is running'
+// function js(){
+//     document.querySelector('#heading').innerText = 'js is running'
+// }
+
+let buttons = document.querySelectorAll('button');
+for(i of buttons){
+    i.addEventListener('click' , chose);
+}
+
+function chose(){
+    let i = this;
+    let t = i.innerText;
+    document.querySelector('#b4').innerText = `you chose: ${t}`;
 }
