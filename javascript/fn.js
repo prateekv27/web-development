@@ -8,14 +8,17 @@
 
 //mean
 
-function meanOp(a,b,c,d,e){
-    return (a+b+c+d+e)/5;
-}
+// function meanOp(a,b,c,d,e){
+//     return (a+b+c+d+e)/5;
+// }
 
-let a =5
-let b = 6
-let c =7
-let d=8
-let e =11
-let v = meanOp(a,b,c,d,e)
-console.log(v)
+// let a =5
+// let b = 6
+// let c =7
+// let d=8
+// let e =11
+// let v = meanOp(a,b,c,d,e)
+// console.log(v)
+
+
+function 
