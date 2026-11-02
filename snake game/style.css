@@ -51,3 +51,23 @@ body{
     justify-self: center;
     align-self: center;
 }
+
+.bodie{ 
+    background-color: green;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    border-radius: 5px;
+}
+
+    
+    
+    
+
+    
+    
+    
